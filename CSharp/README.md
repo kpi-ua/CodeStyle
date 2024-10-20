@@ -16,7 +16,7 @@ public class ClientActivity
     }
 }
 ```
-Why: consistent with the Microsoft's .NET Framework and easy to read.
+Why: consistent with the Microsoft's .NET and easy to read.
 
 
 ### Use camelCasing for method arguments and local variables
@@ -30,8 +30,7 @@ public class UserLog
     }
 }
 ```
-Why: consistent with the Microsoft's .NET Framework and easy to read.
-
+Why: consistent with the Microsoft's .NET and easy to read.
 
 
 ### Do not use Hungarian notation or any other type identification in identifiers
@@ -44,7 +43,8 @@ string name;
 int iCounter;
 string strName;
 ```
-Why: consistent with the Microsoft's .NET Framework and Visual Studio IDE makes determining types very easy (via tooltips). In general you want to avoid type indicators in any identifier.
+Why: consistent with the Microsoft's .NET and Visual Studio IDE makes determining types very easy (via tooltips). In general you want to avoid type indicators in any identifier.
+
 
 ### Do not use Screaming Caps for constants or readonly variables
 ```cs
@@ -55,7 +55,8 @@ public static const string ShippingType = "DropShip";
 public static const string SHIPPINGTYPE = "DropShip";
 ```
 
-Why: consistent with the Microsoft's .NET Framework. Caps grap too much attention.
+Why: consistent with the Microsoft's .NET. Caps grap too much attention.
+
 
 ### Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
 ```cs
@@ -73,7 +74,7 @@ XmlDocument xmlDocument;
 FtpHelper ftpHelper;
 UriPart uriPart;
 ```
-Why: consistent with the Microsoft's .NET Framework and prevents inconsistent abbreviations.
+Why: consistent with the Microsoft's .NET and prevents inconsistent abbreviations.
 
 
 ### Use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase)
@@ -82,7 +83,7 @@ HtmlHelper htmlHelper;
 FtpTransfer ftpTransfer;
 UIControl uiControl;
 ```
-Why: consistent with the Microsoft's .NET Framework. Caps would grap visually too much attention.
+Why: consistent with the Microsoft's .NET. Caps would grap visually too much attention.
 
 
 ### Use Underscores for private class variables
@@ -97,7 +98,6 @@ public TimeSpan timeLeft;
 ```
 
 Why: underscore before variable name makes it possible to understand at once that the variable is defined  at the class level.
-
 
 
 ### Use implicit type var for local variable declarations. Exception: primitive types (int, string,  double, etc) use predefined names
@@ -125,7 +125,7 @@ public class DocumentCollection
 {
 }
 ```
-Why: consistent with the Microsoft's .NET Framework and easy to remember.
+Why: consistent with the Microsoft's .NET and easy to remember.
 
 
 ### Prefix interfaces with the letter I.  Interface names are noun (phrases) or adjectives
@@ -140,7 +140,7 @@ public interface IGroupable
 {
 }
 ```
-Why: consistent with the Microsoft's .NET Framework.
+Why: consistent with the Microsoft's .NET.
 
 
 ###  Name source files according to their main classes. Exception: file names with partial classes reflect their source or purpose, e.g. designer, generated, and other
@@ -167,9 +167,7 @@ namespace Product.Module.Component
 namespace Product.Layer.Module.Group
 ```
 
-Why: consistent with the Microsoft's .NET Framework. Maintains good organization of your code base.
-
-
+Why: consistent with the Microsoft's .NET, maintains good organization of your code base.
 
 
 ### Vertically align curly brackets
@@ -233,7 +231,7 @@ public enum Dockings
     Left = 8
 }
 ```
-Why: consistent with the Microsoft's .NET Framework and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').
+Why: consistent with the Microsoft's .NET and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').
 
 
 ### Do not explicitly specify a type of an enum or values of enums (except bit fields)
@@ -259,8 +257,6 @@ public enum Direction
 Why: can create confusion when relying on actual types and values.
 
 
-
-
 ### Do not suffix enum names with Enum
 ```cs
 // Don't
@@ -283,7 +279,7 @@ public enum Coin
     Dollar
 }
 ```
-Why: consistent with the Microsoft's .NET Framework and consistent with prior rule of no type indicators in identifiers.
+Why: consistent with the Microsoft's .NET and consistent with prior rule of no type indicators in identifiers.
 
 ***
 Based on [dotfactory C# Coding Standards and Naming Conventions](http://www.dofactory.com/reference/csharp-coding-standards).
