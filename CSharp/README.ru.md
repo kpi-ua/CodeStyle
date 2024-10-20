@@ -1,5 +1,5 @@
 # Стиль и конвенции кода C#
-| [English](README.md) | [Русский](README.ru.md) |
+[English](README.md) | [Русский](README.ru.md)
 
 
 ### Use PascalCasing for class names and method names
@@ -17,7 +17,7 @@ public class ClientActivity
     }
 }
 ```
-Почему: consistent with the Microsoft's .NET Framework and easy to read.
+Почему: consistent with the Microsoft's.NET and easy to read.
 
 
 ### Use camelCasing for method arguments and local variables
@@ -31,8 +31,7 @@ public class UserLog
     }
 }
 ```
-Почему: consistent with the Microsoft's .NET Framework and easy to read.
-
+Почему: consistent with the Microsoft's.NET and easy to read.
 
 
 ### Do not use Hungarian notation or any other type identification in identifiers
@@ -45,7 +44,7 @@ string name;
 int iCounter;
 string strName;
 ```
-Почему: consistent with the Microsoft's .NET Framework and Visual Studio IDE makes determining types very easy (via tooltips). In general you want to avoid type indicators in any identifier.
+Почему: consistent with the Microsoft's.NET and Visual Studio IDE makes determining types very easy (via tooltips). In general you want to avoid type indicators in any identifier.
 
 ### Do not use Screaming Caps for constants or readonly variables
 ```cs
@@ -55,8 +54,8 @@ public static const string ShippingType = "DropShip";
 // Неправильно
 public static const string SHIPPINGTYPE = "DropShip";
 ```
+Почему: consistent with the Microsoft's.NET. Caps grap too much attention.
 
-Почему: consistent with the Microsoft's .NET Framework. Caps grap too much attention.
 
 ### Avoid using Abbreviations. Exceptions: abbreviations commonly used as names, such as Id, Xml, Ftp, Uri
 ```cs
@@ -74,7 +73,7 @@ XmlDocument xmlDocument;
 FtpHelper ftpHelper;
 UriPart uriPart;
 ```
-Почему: consistent with the Microsoft's .NET Framework and prevents inconsistent abbreviations.
+Почему: consistent with the Microsoft's.NET and prevents inconsistent abbreviations.
 
 
 ### Use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase)
@@ -83,7 +82,7 @@ HtmlHelper htmlHelper;
 FtpTransfer ftpTransfer;
 UIControl uiControl;
 ```
-Почему: consistent with the Microsoft's .NET Framework. Caps would grap visually too much attention.
+Почему: consistent with the Microsoft's.NET. Caps would grap visually too much attention.
 
 
 ### Use Underscores for private class variables
@@ -96,9 +95,7 @@ public TimeSpan _timeLeft;
 public DateTime client_Appointment;
 public TimeSpan timeLeft;
 ```
-
 Почему: underscore before variable name makes it possible to understand at once that the variable is defined  at the class level.
-
 
 
 ### Use implicit type var for local variable declarations. Exception: primitive types (int, string,  double, etc) use predefined names
@@ -126,7 +123,7 @@ public class DocumentCollection
 {
 }
 ```
-Почему: consistent with the Microsoft's .NET Framework and easy to remember.
+Почему: consistent with the Microsoft's.NET and easy to remember.
 
 
 ### Prefix interfaces with the letter I.  Interface names are noun (phrases) or adjectives
@@ -141,7 +138,7 @@ public interface IGroupable
 {
 }
 ```
-Почему: consistent with the Microsoft's .NET Framework.
+Почему: consistent with the Microsoft's.NET.
 
 
 ###  Name source files according to their main classes. Exception: file names with partial classes reflect their source or purpose, e.g. designer, generated, and other
@@ -167,10 +164,7 @@ namespace Company.Product.Module.SubModule
 namespace Product.Module.Component
 namespace Product.Layer.Module.Group
 ```
-
-Почему: consistent with the Microsoft's .NET Framework. Maintains good organization of your code base.
-
-
+Почему: consistent with the Microsoft's.NET. Maintains good organization of your code base.
 
 
 ### Vertically align curly brackets
@@ -234,7 +228,7 @@ public enum Dockings
     Left = 8
 }
 ```
-Почему: consistent with the Microsoft's .NET Framework and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').
+Почему: consistent with the Microsoft's.NET and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').
 
 
 ### Do not explicitly specify a type of an enum or values of enums (except bit fields)
@@ -260,8 +254,6 @@ public enum Direction
 Почему: can create confusion when relying on actual types and values.
 
 
-
-
 ### Do not suffix enum names with Enum
 ```cs
 // Неправильно
@@ -284,7 +276,7 @@ public enum Coin
     Dollar
 }
 ```
-Почему: consistent with the Microsoft's .NET Framework and consistent with prior rule of no type indicators in identifiers.
+Почему: consistent with the Microsoft's.NET and consistent with prior rule of no type indicators in identifiers.
 
 ***
 Базируется на [dotfactory C# Coding Standards and Naming Conventions](http://www.dofactory.com/reference/csharp-coding-standards).
